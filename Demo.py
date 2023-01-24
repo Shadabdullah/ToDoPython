@@ -21,6 +21,7 @@ while True:
         case "show":
             file = open("todo.txt",'r')
             todos = file.readlines()
+            file.close()
             for ind , item in enumerate (todos):
                 print(f"{ind+1} : { item}")
 
